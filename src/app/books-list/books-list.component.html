@@ -1,0 +1,7 @@
+<app-header></app-header>
+<section>
+	<div class="heading"><a  routerLink="/home">Home</a> > Books List</div>
+	<div class="books" *ngFor="let book of Books">
+		<app-book title="{{book.title}}" author="{{book.author}}" description="{{book.description}}" count="{{book.count}}" bookId="{{book.id}}"></app-book>
+	</div>
+</section>

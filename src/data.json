@@ -1,0 +1,49 @@
+[{
+  "id": "1",
+  "title": "Agile Web Development with Rails",
+  "author": "Sam Ruby, Dave Thomas, David Heinemeier Hansson",
+  "description": "A great text book for Agile web development",
+  "count": 10
+},
+{
+  "id": "2",
+  "title": "Flask Web Development",
+  "author": "Miguel Grinberg",
+  "description": "Learn web development in 3 months",
+  "count": 20
+},
+{
+  "id": "3",
+  "title": "Agile web development with rails a Pragmatic guide",
+  "author": "Dave Thomas",
+  "description": "Rails is a full-stack, open source web framework that enables you to create full-featured, sophisticated web-based applications, but with a twist. A full Rails application probably has less total code than the XML you'd need to configure the same application in other frameworks. With this book you'll learn how to use to connect business objects and database tables.",
+  "count": 15
+},
+{
+  "id": "4",
+  "title": "CakePHP Application Development",
+  "author": "Ahsanul Bari, Anupom Syam",
+  "description": "I bought this book based on the reviews here. It was the highest rated CakePHP book on Amazon at the time so I figured I couldn't go wrong. I was a little wrong about that.",
+  "count": 5
+},
+{
+  "id": "5",
+  "title": "Alex Homer, ASP.NET 2.0 Visual Web Developer 2005",
+  "author": "David Sussman",
+  "description": "This Starter Kit serves as an entrylevel introduction",
+  "count": 8
+},
+{
+  "id": "6",
+  "title": "PHP Oracle Web Development Data processing",
+  "author": "Yuli Vasiliev",
+  "description": "Based on the title the book has so many things to discuss but it actually has less than",
+  "count": 7
+},
+{
+  "id": "7",
+  "title": "WordPress for Web Developers",
+  "author": "Stephanie Leary auth",
+  "description": "A great book for word press web developeres",
+  "count": 3
+}]

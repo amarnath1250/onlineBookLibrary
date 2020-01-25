@@ -1,0 +1,45 @@
+<app-header></app-header>
+<section>
+	<div class="heading"><a  routerLink="/home">Home</a> > <span *ngIf="!idFromUrl">Add</span><span *ngIf="idFromUrl">Edit</span> Books</div>
+	<div *ngIf="booksAdded" class="success">Book has been addded to libraray. Go to <a  routerLink="/books-list">Book List</a> to see your change.</div>
+    <section>
+        <form [formGroup]="addBookForm" (ngSubmit)="onSubmit()" action="">
+            <div class="row">
+                <label class="labelTxt">Book Name <span class="required">*</span></label>
+                <input type="text" class="" formControlName="bookName" placeholder="" maxlength="50">
+            </div>
+            <div *ngIf="(addBookForm.controls.bookName.dirty || addBookForm.controls.bookName.touched || submitted) && addBookForm.controls.bookName.errors" class="error">
+                <div *ngIf="addBookForm.controls.bookName.errors?.required">Book Name is required.</div>
+                <div *ngIf="addBookForm.controls.bookName.errors?.pattern">Please enter  a valid book name.</div>
+            </div>
+            <div class="row">
+                <label class="labelTxt">Author Name <span class="required">*</span></label>
+                <input type="text" class="" formControlName="authorName" placeholder="" maxlength="50">
+            </div>
+            <div *ngIf="(addBookForm.controls.authorName.dirty || addBookForm.controls.authorName.touched || submitted) && addBookForm.controls.authorName.errors" class="error">
+                <div *ngIf="addBookForm.controls.authorName.errors?.required">Author Name is required.</div>
+                <div *ngIf="addBookForm.controls.authorName.errors?.pattern">Please enter  a valid author name.</div>
+            </div>
+            <div class="row">
+                <label class="labelTxt">Book Description <span class="required">*</span></label>
+                <input type="text" class="" formControlName="bookDescription" placeholder="" maxlength="1500">
+            </div>
+            <div *ngIf="(addBookForm.controls.bookDescription.dirty || addBookForm.controls.bookDescription.touched || submitted) && addBookForm.controls.bookDescription.errors" class="error">
+                <div *ngIf="addBookForm.controls.bookDescription.errors?.required">Book Description is required.</div>
+                <div *ngIf="addBookForm.controls.bookDescription.errors?.pattern">Please enter  a valid book description.</div>
+            </div>
+            <div class="row">
+                <label class="labelTxt">Book Count <span class="required">*</span></label>
+                <input type="text" class="" formControlName="count" placeholder="" maxlength="4" numberonly>
+            </div>
+            <div *ngIf="(addBookForm.controls.count.dirty || addBookForm.controls.count.touched || submitted) && addBookForm.controls.count.errors" class="error">
+                <div *ngIf="addBookForm.controls.count.errors?.required">Book Count is required.</div>
+                <div *ngIf="addBookForm.controls.count.errors?.pattern">Please enter  a valid book count.</div>
+            </div>
+            <div class="row end">
+                <button type="submit" id="addBookBtn" class="submitBtn">Save</button>
+            </div>
+        </form>     
+    </section>
+	
+</section>

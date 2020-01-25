@@ -1,0 +1,37 @@
+.form{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.labelTxt{
+	font-size: 12px;
+    font-weight: bold;
+}
+.required{
+	color: red;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+input{
+    width: 90%;
+    border: 2px solid #929697;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.books{
+    border: 1px solid #929697;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 12px;
+}
+.label{
+    font-style: italic;
+    color: grey;
+}

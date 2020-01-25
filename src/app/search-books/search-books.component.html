@@ -1,0 +1,20 @@
+<app-header></app-header>
+<section>
+	<div class="heading"><a  routerLink="/home">Home</a> > Search Books</div>
+
+	<section class="form">
+		<div class="row">
+			<label class="labelTxt">Search By Book Name, Author Name or Book Description <span class="required">*</span></label>
+        </div>
+        <div class="roe">
+        	<input type="text" class="" placeholder="" maxlength="50" [(ngModel)]="searchText">
+        </div>
+	</section>
+	
+	<section>
+		<div class="books" *ngFor="let book of Books | filter:searchText">
+			<app-book title="{{book.title}}" author="{{book.author}}" description="{{book.description}}" count="{{book.count}}" bookId="{{book.id}}"></app-book>
+		</div>
+	</section>
+	
+</section>
